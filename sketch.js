@@ -4,7 +4,11 @@ const Bodies = Matter.Bodies;
 const constraint = Matter.constraint;
 
 var engine, world;
-var box1, pig1;
+var box1,box2,box3,box4,box5; 
+var ground,platform;
+var pig1,pig3;
+var log1,log2,log3,log4,log5,log6;
+var bird;
 var backgroungIMG;
 
 function preload(){
@@ -38,7 +42,7 @@ function setup(){
 
     bird = new Bird(100,100);
 
-    sling = new SlingShot(bird.body,log6.body)
+    SlingShot = new SlingShot(bird.body,log6.body);
 
 }
 
@@ -71,5 +75,5 @@ function draw(){
 
     bird.display();
 
-    sling.display();
+    SlingShot.display();
 }
