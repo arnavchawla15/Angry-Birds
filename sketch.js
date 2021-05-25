@@ -38,6 +38,8 @@ function setup(){
 
     bird = new Bird(100,100);
 
+    sling = new SlingShot(bird.body,log6.body)
+
 }
 
 function draw(){
@@ -68,4 +70,6 @@ function draw(){
     log6.display();
 
     bird.display();
+
+    sling.display();
 }
